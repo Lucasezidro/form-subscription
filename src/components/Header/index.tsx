@@ -10,22 +10,22 @@ export function Header () {
           <div className="number"><p>1</p></div>
           <div className="step">
             <p>STEP 1</p>
-            <strong><a href="">YOUR INFO</a></strong>
+            <strong><a href="/">YOUR INFO</a></strong>
           </div>
           <div className="number"><p>2</p></div>
           <div className="step">
             <p>STEP 2</p>
-            <strong><a href="">SELECT PLAN</a></strong>
+            <strong><a href="/payment">SELECT PLAN</a></strong>
           </div>
           <div className="number"><p>3</p></div>
           <div className="step">
             <p>STEP 3</p>
-            <strong><a href="">ADD-ONS</a></strong>
+            <strong><a href="/pick-add-on">ADD-ONS</a></strong>
           </div>
           <div className="number"><p>4</p></div>
           <div className="step">
             <p>STEP 4</p>
-            <strong><a href="">SUMMARY</a></strong>
+            <strong><a href="/summary">SUMMARY</a></strong>
           </div>
         </div>
       </Container>

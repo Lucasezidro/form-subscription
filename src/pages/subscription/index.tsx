@@ -11,6 +11,7 @@ export function Subscription () {
         text="Plase provide your name, email, address, and phone number"
         title="Personal Info"
         textButton="Next Step"
+        goNextButton
         onClickNextButton={() => router("/payment")}
       >
         <form>

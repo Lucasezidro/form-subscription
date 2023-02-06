@@ -5,13 +5,24 @@ type BoxProps = {
   title?: string;
   text?: string;
   goBackButton?: boolean;
+  goNextButton?: boolean;
+  goBackButtonDisable?: boolean;
   textButton?: string;
-  onClickNextButton?: () => void
-  onClickBackButton?: () => void
-}
+  onClickNextButton?: () => void;
+  onClickBackButton?: () => void;
+};
 
-export function Box ({ children, title, text, goBackButton, textButton, onClickNextButton, onClickBackButton }: BoxProps) {
-
+export function Box({
+  children,
+  title,
+  text,
+  goBackButton,
+  textButton,
+  onClickNextButton,
+  onClickBackButton,
+  goBackButtonDisable,
+  goNextButton
+}: BoxProps) {
   return (
     <Container>
       <Header />
@@ -22,16 +33,26 @@ export function Box ({ children, title, text, goBackButton, textButton, onClickN
         <p>{text}</p>
       </div>
 
-        <div className="content">
-          {children}
-        </div>
+      <div className="content">{children}</div>
 
-      <button className="next-step" onClick={onClickNextButton}>{textButton}</button>
-
-      {goBackButton && (
-        <button className="go-back" onClick={onClickBackButton}>Go Back</button>
+      {goNextButton && (
+        <button className="next-step" onClick={onClickNextButton}>
+          {textButton}
+        </button>
       )}
 
+
+      {goBackButton && (
+        <button className="go-back" onClick={onClickBackButton}>
+          Go Back
+        </button>
+      )}
+
+      {goBackButtonDisable && (
+        <button className="go-back-disable" disabled>
+          Go Back
+        </button>
+      )}
     </Container>
-  )
+  );
 }

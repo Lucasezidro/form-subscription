@@ -11,11 +11,13 @@ export const Container = styled.div`
   padding: 24px;
 
   .title {
-    width: max-content;
+    width: 600px;
+    margin: auto;
+    margin-left: 95px;
     position: relative;
     left: 17rem;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: flex-start;
     flex-direction: column;
 
@@ -26,7 +28,6 @@ export const Container = styled.div`
 
     p {
       position: relative;
-      left: 6rem;
       bottom: 2rem;
       color: hsl(231, 11%, 63%);
     }
@@ -74,5 +75,20 @@ export const Container = styled.div`
       filter: brightness(0.8);
       color: hsl(213, 96%, 18%);
     }
+  }
+
+  .go-back-disable {
+    position: relative;
+    left: 16rem;
+    top: 23.5rem;
+    padding: 12px;
+    width: 6.5rem;
+    border-radius: 6px;
+    border: none;
+    color: hsl(231, 11%, 63%);
+    background-color: hsl(231, 100%, 99%);
+    cursor: not-allowed;
+    transition: 0.4s;
+    font-weight: bold;
   }
 `
