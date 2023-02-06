@@ -13,6 +13,35 @@ export const Container = styled.div`
     cursor: pointer;
 
     .arcade {
+      border: 1px solid hsl(231, 11%, 63%);
+      padding: 10px;
+      width: 120px;
+      height: 150px;
+      border-radius: 8px;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      flex-direction: column;
+
+      img {
+        position: relative;
+        bottom: 1rem;
+      }
+
+      strong {
+        position: relative;
+        top: 2rem;
+        font-size: 15px;
+      }
+
+      p {
+        position: relative;
+        top: 2rem;
+        font-size: 12px;
+        color: hsl(231, 11%, 63%);
+      }
+    }
+    .arcade-selected {
       border: 1px solid hsl(213, 96%, 18%);
       padding: 10px;
       width: 120px;
@@ -43,6 +72,35 @@ export const Container = styled.div`
     }
 
     .advanced {
+      border: 1px solid hsl(231, 11%, 63%);
+      padding: 10px;
+      width: 120px;
+      height: 150px;
+      border-radius: 8px;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      flex-direction: column;
+
+      img {
+        position: relative;
+        bottom: 1rem;
+      }
+
+      strong {
+        position: relative;
+        top: 2rem;
+        font-size: 15px;
+      }
+
+      p {
+        position: relative;
+        top: 2rem;
+        font-size: 12px;
+        color: hsl(231, 11%, 63%);
+      }
+    }
+    .advanced-selected {
       border: 1px solid hsl(213, 96%, 18%);
       padding: 10px;
       width: 120px;
@@ -73,6 +131,36 @@ export const Container = styled.div`
     }
 
     .pro {
+      border: 1px solid hsl(231, 11%, 63%);
+      padding: 10px;
+      width: 120px;
+      height: 150px;
+      border-radius: 8px;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      flex-direction: column;
+
+      img {
+        position: relative;
+        bottom: 1rem;
+      }
+
+      strong {
+        position: relative;
+        top: 2rem;
+        font-size: 15px;
+      }
+
+      p {
+        position: relative;
+        top: 2rem;
+        font-size: 12px;
+        color: hsl(231, 11%, 63%);
+      }
+    }
+
+    .pro-selected {
       border: 1px solid hsl(213, 96%, 18%);
       padding: 10px;
       width: 120px;
@@ -117,8 +205,5 @@ export const Container = styled.div`
       font-weight: bold;
     }
 
-    .yearly {
-      color: hsl(231, 11%, 63%);
-    }
   }
 `

@@ -26,5 +26,12 @@ export const Container = styled.div`
       border-radius: 8px;
       border: 1px solid hsl(213, 96%, 18%);
     }
+
+    .error {
+      position: relative;
+      right: 17.3rem;
+      color: #FB3640;
+      font-size: 14px
+    }
   }
 `
