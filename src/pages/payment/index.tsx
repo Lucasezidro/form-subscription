@@ -8,22 +8,7 @@ import Switch from "@mui/material/Switch";
 import { useEffect, useState } from "react";
 import { PaymentPlan } from "../../components/PaymentPlan";
 
-type ExpenseProps = {
-  arcade: {
-    title: string
-    amount: number
-  }
-  advanced: {
-    title: string
-    amount: number
-  }
-  pro: {
-    title: string
-    amount: number
-  }
-}
-
-export function Payment(props: ExpenseProps) {
+export function Payment() {
   const router = useNavigate();
   const [selectArcadeMethod, setSelectArcadeMethod] = useState<boolean>(false);
   const [selectAdvancedMethod, setSelectAdvancedMethod] =

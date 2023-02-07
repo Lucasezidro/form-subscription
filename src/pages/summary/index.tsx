@@ -20,7 +20,7 @@ export function Summary () {
             <div className="subscription">
               <div>
                 <span className="text-info">Arcade (Monthly)</span>
-                <a href="/">change</a>
+                <a href="/payment">change</a>
               </div>
               <p>$9/mo</p>
             </div>
